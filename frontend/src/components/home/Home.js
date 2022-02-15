@@ -1,6 +1,6 @@
+import MouseIcon from '@material-ui/icons/Mouse';
 import React, { Fragment, useEffect } from "react";
 import { useAlert } from "react-alert";
-import { CgMouse } from "react-icons/all";
 import { useDispatch, useSelector } from "react-redux";
 import { clearErrors, getProduct } from "../../actions/productAction";
 import Loader from "../layout/loader/Loader";
@@ -35,7 +35,7 @@ const Home = () => {
 
             <a href="#container">
               <button>
-                Scroll <CgMouse />
+                Scroll <MouseIcon />
               </button>
             </a>
           </div>
