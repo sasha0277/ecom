@@ -1,1 +1,1 @@
-web: npm bakend/server.js
+web:node bakend/server.js
