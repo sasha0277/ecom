@@ -4,12 +4,11 @@
   "description": "",
   "main": "backend/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node backend/server.js",
+    "start": " node backend/server.js",
     "dev": "nodemon backend/server.js",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false && npm install --prefix frontend && npm run build --prefix frontend"
+    "client": "npm start --prefix frontend",
+    "con": "concurrently \"npm run dev\" \"npm run client\" "
   },
- 
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -31,5 +30,8 @@
   "engines": {
     "node": ">=15",
     "npm": ">=6"
+  },
+  "devDependencies": {
+    "concurrently": "^7.0.0"
   }
 }
